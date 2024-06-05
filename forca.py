@@ -1,4 +1,3 @@
-def Forca(tentativa):
     f1 = " +-------+   "
     f2 = " |           "
     f3 = " |           "
@@ -43,6 +42,17 @@ def Continue():
             print("Digite S ou N")
     return Acabou
 
+def sorteiapalavra():
+    lista = ["amor","boiceta ","totatola","menort","discoteca","grama","casamento","japones","tonycontry"]
+    return random.choice(lista)
+
+def apresentapalavra (letras, palavras):
+    npalavra= " _ " * len(palavras)
+    return npalavra
+
+import random
+
+
 ##Jogar = True
 #x=0
 ##while Jogar :
@@ -51,8 +61,8 @@ def Continue():
    ##ss x = x + 1
 Forca (10)
 
-def sorteiapalavra():
-    lista = ["amor","boiceta ","totatola","menort","discoteca","grama","casamento","japones","tonycontry"]
-    return random.choice(lista)
-    import random
-    print(sorteiaapalavra())
+print(sorteiapalavra())
+
+
+
+print (apresentapalavra("AB","abacaxi"))
