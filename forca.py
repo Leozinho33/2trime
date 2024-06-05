@@ -1,3 +1,4 @@
+def Forca(tentativa):
     f1 = " +-------+   "
     f2 = " |           "
     f3 = " |           "
@@ -8,7 +9,6 @@
 
     if tentativa >= 1:
         f2 = " |       | "
-
     if tentativa >= 2:
         f3 = " |       O "
     if tentativa >= 3:
@@ -48,7 +48,10 @@ def sorteiapalavra():
 
 def apresentapalavra (letras, palavras):
     npalavra= " _ " * len(palavras)
-    return npalavra
+    for L in range (0 ,len(letras)):
+        print(letras[L])   
+
+    return npalavra  
 
 import random
 
@@ -63,6 +66,8 @@ Forca (10)
 
 print(sorteiapalavra())
 
+print (apresentapalavra("ABX","abacaxi"))
 
 
-print (apresentapalavra("AB","abacaxi"))
+
+       
